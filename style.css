@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "DumbnerdRegular";
+  src: url(dumbnerd-webfont.ttf) format('truetype'),
+      url(dumbnerd-webfont.svg) format("svg")
+}
+
+body {
+  background-color: #6a905c;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  transition: border 1s;
+  position: relative;
+}
+
+
+.card {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: url("./ALE_8888.copia.jpg") center center no-repeat;
+  background-size: 300px;
+}
+.card0:hover {
+  background: url("./ALE_8888.copia.jpg") left center no-repeat;
+  background-size: 400px;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.card0:hover .fa {
+  color: #fff;
+  opacity: 1;
+}
+h2 {
+  font-family: "DumbnerdRegular", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 30px;
+  background: linear-gradient(
+        to right,
+        #FBB732 20%,
+        #fdcb67 30%,
+        #ffe4af 70%,
+        #ffff 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
+  background: linear-gradient(
+        to right,
+        #FBB732 20%,
+        #fdcb67 30%,
+        #ffe4af 70%,
+        #ffff 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+.icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
