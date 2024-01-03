@@ -44,22 +44,27 @@ body {
   align-items: center;
   position: relative;
 }
+
 .card0 {
-  background: url("./ALE_8888.copia.jpg") center center no-repeat;
+  background: url("./dani.jpg") center center no-repeat;
   background-size: 300px;
 }
+
 .card0:hover {
-  background: url("./ALE_8888.copia.jpg") left center no-repeat;
+  background: url("./dani.jpg") left center no-repeat;
   background-size: 400px;
 }
-.card0:hover h2 {
+
+.card0:hover h2, h3 {
   opacity: 1;
 }
+
 .card0:hover .fa {
   color: #fff;
   opacity: 1;
 }
-h2 {
+
+h2{
   font-family: "DumbnerdRegular", Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
   color: #fff;
@@ -78,6 +83,28 @@ h2 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+h3 {
+  font-family: "DumbnerdRegular", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 30px;
+  background: linear-gradient(
+        to right,
+        #FBB732 20%,
+        #fdcb67 30%,
+        #ffe4af 70%,
+        #ffff 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-size: 500% auto;
     animation: textShine 5s ease-in-out infinite alternate;
 }
