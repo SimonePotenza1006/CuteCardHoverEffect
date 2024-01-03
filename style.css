@@ -54,7 +54,7 @@ body {
   /* background: url("./dani.jpg") left center no-repeat;  */
   /* background-position: left no-repeat; */
   background-position-x: left;
-  background-size: 400px;
+  background-size: 500px;
 }
 
 .card0:hover h2, h3 {
